@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Watch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <img src="./images/logo.png" alt="">
+    <a class="navbar-brand mx-2" href="#">Sky Watch</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" aria-current="page" href="https://github.com/Mohamednabil96">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:+201554592044">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:mohamednabilgomaa96@gmail.com">Mail</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div>
+  <video id="background-video" autoplay loop muted>
+    <source src="./images/sky.mp4" type="video/mp4">
+  </video>
+
+  <div class="mainP container">
+    <h1 class="text-center my-4 fw-bolder">EXPLORE THE WEATHER OF ANY CITY</h1>
+    <div class="mb-3">
+      <label for="cityInput" class="form-label fw-bolder">City:</label>
+
+      <input type="text" class="form-control" id="cityInput" value="Cairo">
+      <button class="btn btn-dark mt-2" onclick="searchCity()">Search</button>
+
+    </div>
+    <div class="row" id="weatherCards"></div>
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="./JS/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="./JS/bootstrap.min.js"></script> 
+
+</body>
+
+</html>
