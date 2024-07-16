@@ -1,4 +1,4 @@
-skywatch
+Sky-Watch
 
 A weather forecasting application providing 3-day weather forecasts based on user-specified cities. 
 
